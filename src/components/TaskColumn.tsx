@@ -11,7 +11,7 @@ type taskColumnProps = {
     tasks: TaskData[],
     status: "todo" | "doing" | "done";
     handleDelete: (taskIndex: number) => void
-    setActiveCard: React.Dispatch<React.SetStateAction<null>>
+    setActiveCard: React.Dispatch<React.SetStateAction<number | null>>;
     onDrop: (status:any, index:number) => void
 }
 
