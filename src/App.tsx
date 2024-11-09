@@ -31,7 +31,7 @@ const onDrop = (status:any, position:any ) => {
   if(activeCard == null || activeCard === undefined )return
   
   const TaskToMove = tasks[activeCard]
-  const updatedTasks = tasks.filter((task, index) =>  index !== activeCard)
+  const updatedTasks = tasks.filter((_, index) =>  index !== activeCard)
 
   updatedTasks.splice(position, 0, {
     ...TaskToMove,
