@@ -11,7 +11,7 @@ const oldTasks: any = localStorage.getItem("tasks")
 function App() {
 
   const [tasks, setTasks] = useState<TaskData[] | []>(JSON.parse(oldTasks) || []);
-  const [activeCard, setActiveCard ] = useState(null)
+  const [activeCard, setActiveCard] = useState<number | null>(null);
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
