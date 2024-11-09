@@ -6,7 +6,7 @@ type TaskCardProps = {
     tags:Tag[]
     handleDelete: () => void
     index:number
-    setActiveCard: React.Dispatch<React.SetStateAction<null>>
+    setActiveCard: React.Dispatch<React.SetStateAction<number | null>>
 }
 
 const TaskCard = ({ title, tags, handleDelete, index, setActiveCard}: TaskCardProps) => {
